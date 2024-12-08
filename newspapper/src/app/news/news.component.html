@@ -1,0 +1,11 @@
+<article class="news">
+  <a [routerLink]="getNewsLink()">
+    <div class="image-new">
+      <img [src]="imageSrc" alt="{{ title }}">
+    </div>
+    <div class="title-new">
+      <h1 id="title">{{ title }}</h1>
+      <h4 id="author">{{ author }}</h4>
+    </div>
+  </a>
+</article>

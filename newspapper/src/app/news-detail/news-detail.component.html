@@ -1,0 +1,57 @@
+<article class="news-container" *ngIf="news">
+  <div class="news">
+    <h1>{{ news.title }}</h1>
+    <span>{{ news.author }}</span>
+    <img [src]="news.imageSrc" alt="{{ news.title }}">
+    <div class="nav">
+      <p>5 de Diciembre de 2024</p>
+      <ul class="nav-detail">
+        <li><a href="#">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a></li>
+        <li><a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a></li>
+        <li><a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a></li>
+        <li><a href="#">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a></li>
+        <li><a href="#">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a></li>
+      </ul>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam assumenda nam vitae minima! Deleniti, iusto, ipsum aliquid, vero quod consectetur hic reprehenderit eligendi quibusdam quae saepe porro! Molestiae, rerum vero!
+    Corporis expedita debitis beatae, nam accusantium cum. Porro, doloribus culpa! Reprehenderit temporibus ullam officia nisi architecto qui quasi ea aut exercitationem hic ab molestiae minus, doloremque itaque, vero et aliquam?
+    Nam perferendis autem sunt, voluptatum non veritatis culpa quibusdam eligendi natus repellat facilis quasi adipisci quaerat vero. Accusamus aut possimus id fugit odit minima esse porro dicta, amet sunt optio.
+    Tenetur vitae quibusdam veniam assumenda alias? Sed laboriosam necessitatibus nulla itaque autem repellat asperiores sequi natus! A laudantium id, beatae veniam officiis aspernatur, dolor repellat at eveniet repellendus, modi sequi.
+    Quae quidem quisquam nesciunt odit, non sit rem quod sint fuga. Quaerat distinctio magni illo natus, ad cum sunt deleniti incidunt, voluptatibus iste in provident! Molestias voluptatum perspiciatis neque non!</p>
+  </div>
+  <div class="container-other-news">
+    <div class="box-color">
+      <a href="#">
+        <span>Anuncios</span>
+        <!--<img src="../../assets/Publicidad/publicidad-de-marca-1.jpg" alt="">-->
+      </a>
+    </div>
+    <div class="other-news">
+      <h1>Ultimas noticias</h1>
+      <ul>
+        <li><a href="#">
+          Milei anticipó que si la inflación sigue a la baja reducirá la suba del dólar oficial al 1% mensual
+        </a></li>
+        <li><a href="#">
+          En Octubre los salarios le volvieron a ganar a la inflación
+        </a></li>
+        <li><a href="#">
+          Gago busca llevar a Boca a su primera victoria de visitante
+        </a></li>
+        <li><a href="#">
+          Wanda tras el beso con L-Gante: "Fue un acting"
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</article>

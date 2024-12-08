@@ -1,0 +1,234 @@
+/* PRINCIPAL */
+
+.nav {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 0 50px 0 #000;
+}
+
+/* TITULO E ITEMS */
+
+.title-and-items {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.title a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.list-items li {
+  list-style: none;
+}
+
+.list-items li a {
+  text-decoration: none;
+  color: gray;
+  font-size: large;
+}
+
+/* MENU HAMBURGUESA */
+
+.menu-hamburguesa {
+  display: none;
+}
+
+/* BUSQUEDA */
+
+.search {
+  display: flex;
+  width: 30%;
+  height: 100px;
+}
+
+.search input {
+  width: 60%;
+  height: 25px;
+  padding-left: 5px;
+  font-size: medium;
+  font-weight: 100;
+}
+
+.search input:focus{
+  outline: none;
+}
+
+.search-user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.search-user i {
+  margin: 10px;
+  cursor: pointer;
+  color: gray;
+}
+
+/* BUSQUEDA EN MOBILE */
+
+.search-user-mobile {
+  display: none;
+  width: 100%;
+}
+
+@media only screen and (max-width:768px){
+
+  .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .title-and-items {
+    width: 60%;
+  }
+
+  .search {
+    width: 30%;
+  }
+
+  .search-user input {
+    width: 80%;
+  }
+
+  .search-user {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width:700px) {
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .list-items {
+    display: none;
+  }
+
+  .search .search-user {
+    display: none;
+  }
+
+  .title-and-items {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* MENU HAMBURGUESA */
+
+  .menu-hamburguesa {
+    display: flex;
+    width: 35%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    z-index: 0;
+  }
+
+  .menu-hamburguesa i {
+    margin-left: 30px;
+    color: #808080;
+  }
+
+  .menu-hamburguesa .desplegue-menu-hamburguesa {
+    position: fixed;
+    z-index: 5 !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+
+  .menu-hamburguesa .desplegue-menu-hamburguesa.active {
+    transform: translateX(0);
+  }
+
+  .menu-hamburguesa .desplegue-menu-hamburguesa ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    z-index: 1;
+    height: 85%;
+    width: 100%;
+  }
+
+  .menu-hamburguesa .desplegue-menu-hamburguesa ul li {
+    list-style: none;
+    padding-left: 15px;
+    width: 100%;
+  }
+
+  .menu-hamburguesa .desplegue-menu-hamburguesa ul li a {
+    text-decoration: none;
+    color: #808080;
+  }
+
+  .menu-hamburguesa .desplegue-menu-hamburguesa ul li div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-hamburguesa .desplegue-menu-hamburguesa ul li div i {
+    color: #808080;
+    width: 15px;
+    height: 15px;
+    right: 0;
+  }
+
+  /* BUSQUEDA EN MOBILE */
+
+  .search-user-mobile {
+    display: flex;
+    width: 35%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .search-user-mobile i {
+    margin-right: 30px;
+    color: #808080;
+  }
+}

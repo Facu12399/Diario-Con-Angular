@@ -1,0 +1,11 @@
+<app-container-news>
+  <div *ngFor="let news of newsByCategory">
+    <app-news
+    [imageSrc]="news.imageSrc"
+    [title]="news.title"
+    [author]="news.author"
+    [category]="news.category">
+    <a [routerLink]="getNewsLink(news)"></a>
+    </app-news>
+  </div>
+</app-container-news>

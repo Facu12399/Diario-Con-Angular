@@ -1,0 +1,54 @@
+<app-container-news>
+  <app-new-principal imageSrc="../../assets/news/trump-winner.webp"
+  ></app-new-principal>
+  <!--
+  <app-news imageSrc="../../assets/news/javier-milei.jpg"
+  title="Javier Milei felicito a Trump por su Victoria para Presidente"
+  author="Por Facundo Maza"
+  ></app-news>
+  <app-news imageSrc="../../assets/news/intercargo-adorni-bullrich-sturzenegger-mogettajpeg.webp"
+  title="El gobierno desregula el servicio de rampas"
+  author="Por Mercedes Ninci"></app-news>
+  <app-news imageSrc="../../assets/news/673693233_224432092_1706x960.webp"
+  title="Bonos en dolares suben y baja el riesgo pais"
+  author="Por Juan Gasalla"></app-news>
+  <app-news imageSrc="../../assets/news/franco-colapinto-asombra.webp"
+  title="Otro equipo de Fórmula 1 acelera por Franco Colapinto"
+  author="Por Fernando Tornello"></app-news>
+  <app-news imageSrc="../../assets/news/dinero-argentina.jpg"
+  title="La inflacion sigue a la baja y dio 2,7% en el mes de Octubre"
+  author="Por Gustavo Lazzari"></app-news>
+  <app-news imageSrc="../../assets/news/salarios.webp"
+  title="En Octubre los salarios le volvieron a ganar a la inflación"
+  author="Por Mariano Salazar"></app-news>
+  <app-news imageSrc="../../assets/news/milei-2.webp"
+  title='Milei anticipó que si la inflación sigue a la baja reducirá la suba del dólar oficial al 1% mensual'
+  author="Por David Cayon"></app-news>
+  <app-news imageSrc="../../assets/news/riestra-velez.webp"
+  title="Velez y Riestra empataron y la liga quedo al rojo vivo"
+  author="Por Gringo Cingolani"></app-news>
+  <app-news imageSrc="../../assets/news/gago-1jpg.webp"
+  title="Gago busca llevar a Boca a su primera victoria de visitante"
+  author="Por Marcelo Sotile"></app-news>
+  <app-news imageSrc="../../assets/news/wanda-nara-l-gantejpg.webp"
+  title='Wanda tras el beso con L-Gante: "Fue un acting"'
+  author="Por Marcela Feudale"></app-news>
+  <app-news imageSrc="../../assets/news/martin-fierro-moda.jpg"
+  title="Se viene el Martín Fierro de la Moda 2024: Conoce los detalles"
+  author="Por Connie Ansaldi"></app-news>
+  <app-news imageSrc="../../assets/news/marcelo-colombo.png"
+  title="El arzobispo de Mendoza, Marcelo Colombo, fue elegido presidente de la Conferencia Episcopal"
+  author="Por Facundo Chaves"></app-news>
+  <app-news imageSrc="../../assets/news/registro-automotor-certificados.webp"
+  title='Una medida de fuerza gremial está frenando la importación de autos y motos'
+  author="Por Horacio Alonso"></app-news>
+  -->
+  <div *ngFor="let news of newsByCategory">
+      <app-news
+      [imageSrc]="news.imageSrc"
+      [title]="news.title"
+      [author]="news.author"
+      [category]="news.category">
+      </app-news>
+  </div>
+</app-container-news>

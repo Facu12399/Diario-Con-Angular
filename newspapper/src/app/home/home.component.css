@@ -1,0 +1,40 @@
+app-new-principal {
+  grid-column: span 2;
+}
+
+app-new-principal {
+  z-index: 0;
+}
+
+app-news {
+  z-index: 0;
+}
+
+app-menu {
+  z-index: 1;
+}
+
+@media only screen and (max-width:768px){
+  app-new-principal {
+    grid-column: 1;
+    margin-bottom: 50px;
+  }
+
+  div app-news {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width:700px) {
+
+  app-new-principal {
+    margin-bottom: 0;
+  }
+
+  div app-news {
+    margin-bottom: 35px;
+  }
+}

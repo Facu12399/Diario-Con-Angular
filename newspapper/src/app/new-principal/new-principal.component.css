@@ -1,0 +1,72 @@
+.new-principal {
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-new {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative; /* Necesario para que los hijos se posicionen en relación a este contenedor */
+}
+
+.image-new img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.last-moment {
+  position: absolute; /* Para posicionarlo encima de la imagen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Un color de fondo semitransparente para distinguirlo */
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 1.5s ease; /* Transición suave */
+  z-index: 2;
+  padding-bottom: 30px;
+  animation: fadeInOut 10s infinite; /* Aplica la animación de desvanecimiento */
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; } /* Empieza y termina en opacidad 0 */
+  50% { opacity: 1; } /* En la mitad del ciclo, opacidad 1 */
+}
+
+.last-moment p {
+  text-align: center;
+}
+
+@media only screen and (max-width:768px){
+
+}
+
+@media only screen and (max-width:700px){
+
+  .new-principal {
+    height: 310px;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-new img {
+    width: 100%;
+    height: 80%;
+  }
+
+  .last-moment {
+    width: 100%;
+    height: 80%;
+  }
+}

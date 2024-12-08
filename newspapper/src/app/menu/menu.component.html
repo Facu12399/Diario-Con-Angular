@@ -1,0 +1,41 @@
+<nav class="nav">
+  <div class="title-and-items">
+    <div class="title">
+      <a href=""><h1>{{ title }}</h1></a>
+    </div>
+    <div>
+      <ul class="list-items">
+        <li><a href="politica">Politica</a></li>
+        <li><a href="economia">Economia</a></li>
+        <li><a href="deportes">Deportes</a></li>
+        <li><a href="espectaculos">Espectaculos</a></li>
+        <li><a href="#">Internacional</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="search">
+    <div class="menu-hamburguesa">
+      <i class="fa-solid fa-bars" (click)="openMenu()"></i>
+      <div class="desplegue-menu-hamburguesa" [class.active]="menuActive">
+        <ul>
+          <li><div>
+            <h1>Newspapper</h1>
+            <i class="fa-solid fa-x" (click)="closeMenu()"></i>
+          </div></li>
+          <li><a href="politica">Politica</a></li>
+          <li><a href="economia">Economia</a></li>
+          <li><a href="deportes">Deportes</a></li>
+          <li><a href="espectaculos">Espectaculos</a></li>
+          <li><a href="#">Internacional</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="search-user">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="search" name="busqueda" id="busqueda">
+    </div>
+    <div class="search-user-mobile">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </div>
+</nav>
